@@ -1,0 +1,38 @@
+Project Overview: File Organizer
+
+Objective:
+This Python project aims to organize files in a specified directory by creating separate folders based on file extensions and moving each file to its corresponding folder.
+
+Modules Used:
+- `os`: Provides a way to interact with the operating system, including file and directory operations.
+- `shutil`: Offers a higher-level interface for file operations, including moving files.
+
+Script Workflow:
+1. User Input:
+   - Requests the user to input the path of the directory to be organized.
+
+2. List Files:
+   - Retrieves the list of files in the specified directory.
+
+3. Organize Files:
+   - Iterates through each file in the directory.
+   - Extracts the filename and extension of each file.
+
+4. Check Existence of Destination Folder:
+   - Checks if a folder with the same extension already exists in the directory.
+
+5. Move Files:
+   - If the folder exists, moves the file to that folder.
+   - If the folder does not exist, creates the folder and then moves the file.
+
+Example Usage:
+```python
+# Example Path: '/path/to/directory'
+Enter Path: /path/to/directory
+```
+
+Note:
+- The script assumes that the user enters a valid directory path.
+- The organization is based on file extensions, creating folders for each unique extension.
+- If a file with the same name already exists in the destination folder, it will be replaced.
+- Adjustments can be made based on specific requirements or improvements, such as handling errors or providing more user-friendly prompts.
